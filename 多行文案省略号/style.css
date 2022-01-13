@@ -1,0 +1,11 @@
+.xxx {
+    display: block; /* 为了兼容不支持 -webkit-box的情况，看情况，有些元素默认是block就可以不用 */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* 行数 */
+    line-height: 17px; /* 行高看具体要求 */
+    /* max-height和height看要求选一个 */
+    max-height: 34px; /* 行数 * 行高 */
+    height: 34px; /* 行数 * 行高 */
+    overflow: hidden;
+}
